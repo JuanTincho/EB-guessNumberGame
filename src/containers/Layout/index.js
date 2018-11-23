@@ -33,7 +33,7 @@ class Layout extends Component {
     tabValue: 0,
   };
 
-  handleChange = (event, value) => {
+  handleTabChange = (event, value) => {
     this.setState({ tabValue: value });
   };
 
@@ -52,7 +52,7 @@ class Layout extends Component {
           <Grid item xs={12}>
             <div className={classes.tabs}>
               <AppBar position="static" style={{ marginBottom: '2rem' }}>
-                <Tabs value={tabValue} onChange={this.handleChange} centered>
+                <Tabs value={tabValue} onChange={this.handleTabChange} centered>
                   <Tab className={classes.tab} label="Human Player" />
                   <Tab className={classes.tab} label="Computer Player" />
                 </Tabs>

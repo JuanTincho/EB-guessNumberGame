@@ -1,0 +1,266 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Layout /> tests Layout shoud match snapshot 1`] = `
+<div
+  className="Layout-root-1"
+>
+  <div
+    className="MuiGrid-container-6 MuiGrid-spacing-xs-24-30"
+  >
+    <div
+      className="MuiGrid-item-7 MuiGrid-grid-xs-12-46"
+    >
+      <h4
+        className="MuiTypography-root-103 MuiTypography-h4-118"
+        style={
+          Object {
+            "textAlign": "center",
+          }
+        }
+      >
+        EB - Guess the number game
+      </h4>
+    </div>
+    <div
+      className="MuiGrid-item-7 MuiGrid-grid-xs-12-46"
+    >
+      <div
+        className="Layout-tabs-2"
+      >
+        <header
+          className="MuiPaper-root-147 MuiPaper-elevation4-153 MuiAppBar-root-138 MuiAppBar-positionStatic-142 MuiAppBar-colorPrimary-145"
+          style={
+            Object {
+              "marginBottom": "2rem",
+            }
+          }
+        >
+          <div
+            className="MuiTabs-root-174"
+          >
+            <div
+              className="MuiTabs-flexContainer-175"
+            >
+              <div
+                className="MuiTabs-scroller-177 MuiTabs-fixed-178"
+                onScroll={[Function]}
+                role="tablist"
+                style={
+                  Object {
+                    "marginBottom": 0,
+                  }
+                }
+              >
+                <div
+                  className="MuiTabs-flexContainer-175 MuiTabs-centered-176"
+                >
+                  <button
+                    aria-selected={true}
+                    className="MuiButtonBase-root-195 MuiTab-root-183 MuiTab-textColorInherit-185 MuiTab-selected-188 Layout-tab-3"
+                    disabled={false}
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    onKeyDown={[Function]}
+                    onKeyUp={[Function]}
+                    onMouseDown={[Function]}
+                    onMouseLeave={[Function]}
+                    onMouseUp={[Function]}
+                    onTouchEnd={[Function]}
+                    onTouchMove={[Function]}
+                    onTouchStart={[Function]}
+                    role="tab"
+                    tabIndex="0"
+                    type="button"
+                  >
+                    <span
+                      className="MuiTab-wrapper-191"
+                    >
+                      <span
+                        className="MuiTab-labelContainer-192"
+                      >
+                        <span
+                          className="MuiTab-label-193"
+                        >
+                          Human Player
+                        </span>
+                      </span>
+                    </span>
+                    <span
+                      className="MuiTouchRipple-root-284"
+                    />
+                  </button>
+                  <button
+                    aria-selected={false}
+                    className="MuiButtonBase-root-195 MuiTab-root-183 MuiTab-textColorInherit-185 Layout-tab-3"
+                    disabled={false}
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    onKeyDown={[Function]}
+                    onKeyUp={[Function]}
+                    onMouseDown={[Function]}
+                    onMouseLeave={[Function]}
+                    onMouseUp={[Function]}
+                    onTouchEnd={[Function]}
+                    onTouchMove={[Function]}
+                    onTouchStart={[Function]}
+                    role="tab"
+                    tabIndex="0"
+                    type="button"
+                  >
+                    <span
+                      className="MuiTab-wrapper-191"
+                    >
+                      <span
+                        className="MuiTab-labelContainer-192"
+                      >
+                        <span
+                          className="MuiTab-label-193"
+                        >
+                          Computer Player
+                        </span>
+                      </span>
+                    </span>
+                    <span
+                      className="MuiTouchRipple-root-284"
+                    />
+                  </button>
+                </div>
+                <span
+                  className="MuiPrivateTabIndicator-root-198 MuiPrivateTabIndicator-colorSecondary-200 MuiTabs-indicator-182"
+                  style={
+                    Object {
+                      "left": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+              </div>
+            </div>
+          </div>
+        </header>
+        <div
+          className="MuiGrid-container-6 MuiGrid-align-items-xs-center-14 MuiGrid-justify-xs-center-23"
+        >
+          <div
+            className="MuiGrid-container-6 MuiGrid-justify-xs-center-23"
+          >
+            <div
+              className="MuiGrid-item-7 MuiGrid-grid-xs-3-37"
+            >
+              <div
+                className="MuiPaper-root-147 MuiPaper-elevation2-151 MuiPaper-rounded-148 HumanPlayer-paper-202"
+              >
+                Choose a number between 1 and 100
+              </div>
+            </div>
+            <div
+              className="MuiGrid-container-6 MuiGrid-justify-xs-center-23"
+            >
+              <div
+                className="MuiFormControl-root-204 MuiFormControl-marginNormal-205 HumanPlayer-textField-203"
+                onKeyPress={[Function]}
+              >
+                <label
+                  className="MuiFormLabel-root-219 MuiFormLabel-filled-223 MuiInputLabel-root-208 MuiInputLabel-formControl-213 MuiInputLabel-animated-216 MuiInputLabel-shrink-215 MuiInputLabel-outlined-218"
+                  data-shrink={true}
+                  htmlFor="outlined"
+                >
+                  Number
+                </label>
+                <div
+                  className="MuiInputBase-root-239 MuiOutlinedInput-root-226 MuiInputBase-formControl-240"
+                  onClick={[Function]}
+                >
+                  <fieldset
+                    aria-hidden={true}
+                    className="MuiPrivateNotchedOutline-root-256 MuiOutlinedInput-notchedOutline-233"
+                    style={
+                      Object {
+                        "paddingLeft": 8,
+                      }
+                    }
+                  >
+                    <legend
+                      className="MuiPrivateNotchedOutline-legend-257"
+                      style={
+                        Object {
+                          "width": 0,
+                        }
+                      }
+                    >
+                      <span
+                        dangerouslySetInnerHTML={
+                          Object {
+                            "__html": "&#8203;",
+                          }
+                        }
+                      />
+                    </legend>
+                  </fieldset>
+                  <input
+                    aria-invalid={false}
+                    className="MuiInputBase-input-249 MuiOutlinedInput-input-234 MuiInputBase-inputType-252"
+                    disabled={false}
+                    id="outlined"
+                    max="100"
+                    min="0"
+                    onBlur={[Function]}
+                    onChange={[Function]}
+                    onFocus={[Function]}
+                    required={false}
+                    step="1"
+                    type="number"
+                    value={0}
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              className="MuiGrid-container-6 MuiGrid-justify-xs-center-23"
+            >
+              <button
+                className="MuiButtonBase-root-195 MuiButton-root-258 MuiButton-contained-269 MuiButton-containedPrimary-270 MuiButton-raised-272 MuiButton-raisedPrimary-273 HumanPlayer-button-201"
+                disabled={false}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="0"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label-259"
+                >
+                  Check Answer
+                </span>
+                <span
+                  className="MuiTouchRipple-root-284"
+                />
+              </button>
+            </div>
+            <h6
+              className="MuiTypography-root-103 MuiTypography-h6-120 HumanPlayer-paper-202"
+              style={
+                Object {
+                  "textAlign": "center",
+                }
+              }
+            >
+              
+            </h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

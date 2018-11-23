@@ -29,19 +29,19 @@ class ComputerPlayer extends Component {
     gameStarted: false,
   };
 
-  setMinNumber = () => {
-    const { guessNumber } = this.state;
-    this.setState({
-      minNumber: guessNumber,
-    });
-  };
+  // setMinNumber = () => {
+  //   const { guessNumber } = this.state;
+  //   this.setState({
+  //     minNumber: guessNumber,
+  //   });
+  // };
 
-  setMaxNumber = () => {
-    const { guessNumber } = this.state;
-    this.setState({
-      maxNumber: guessNumber,
-    });
-  };
+  // setMaxNumber = () => {
+  //   const { guessNumber } = this.state;
+  //   this.setState({
+  //     maxNumber: guessNumber,
+  //   });
+  // };
 
   startGame = () => {
     this.setState({
@@ -60,7 +60,6 @@ class ComputerPlayer extends Component {
   };
 
   setGuessNumber = (min, max) => {
-    // const { minNumber, maxNumber } = this.state;
     this.setState({
       minNumber: min,
       maxNumber: max,
