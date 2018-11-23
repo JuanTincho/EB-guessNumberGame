@@ -5,7 +5,7 @@ import {
 } from '@material-ui/core';
 
 const messages = {
-  win: 'You win',
+  win: 'You win!!!',
   smaller: 'My number is smaller',
   bigger: 'My number is bigger',
 };
@@ -26,7 +26,7 @@ const styles = theme => ({
   },
 });
 
-class UserGuesses extends Component {
+class HumanPlayer extends Component {
   state = {
     numberValue: 0,
     numberAnswer: Math.floor(Math.random() * 101),
@@ -34,10 +34,16 @@ class UserGuesses extends Component {
     message: '',
   };
 
-  onChangeNumber = (e) => {
+  handleChangeNumber = (e) => {
     this.setState({
       numberValue: e.target.value,
     });
+  };
+
+  handleKeyPress = (e) => {
+    if (e.which === 13) {
+      this.checkAnswer();
+    }
   };
 
   checkAnswer = () => {
@@ -63,15 +69,24 @@ class UserGuesses extends Component {
     return numberValue < 0 || numberValue > 100;
   };
 
+  restartGame = () => {
+    this.setState({
+      winState: false,
+      numberAnswer: Math.floor(Math.random() * 101),
+      numberValue: 0,
+      message: '',
+    });
+  };
+
   render() {
     const { classes } = this.props;
     const { message, numberValue, winState } = this.state;
     return (
-      <>
+      <Grid container justify="center">
         <Grid item xs={3}>
           <Paper className={classes.paper}>Choose a number between 1 and 100</Paper>
         </Grid>
-        <Grid item xs={1}>
+        <Grid container justify="center">
           <TextField
             id="outlined"
             className={classes.textField}
@@ -81,28 +96,43 @@ class UserGuesses extends Component {
             label={this.validateNumber() ? 'Error' : 'Number'}
             error={this.validateNumber()}
             value={numberValue}
-            onChange={e => this.onChangeNumber(e)}
+            onChange={this.handleChangeNumber}
+            onKeyPress={this.handleKeyPress}
             inputProps={{ min: '0', max: '100', step: '1' }}
+            disabled={winState}
           />
         </Grid>
-        <Grid item xs={12} />
-        <Grid item xs={1}>
-          <Button
-            variant="contained"
-            color="primary"
-            className={classes.button}
-            onClick={this.checkAnswer}
-            disabled={this.validateNumber()}
-          >
-            Check Answer
-          </Button>
+        <Grid container justify="center">
+          {!winState ? (
+            <Button
+              variant="contained"
+              color="primary"
+              className={classes.button}
+              onClick={this.checkAnswer}
+              disabled={this.validateNumber()}
+            >
+              Check Answer
+            </Button>
+          ) : (
+            <Button
+              variant="contained"
+              color="secondary"
+              className={classes.button}
+              onClick={this.restartGame}
+            >
+              Play again
+            </Button>
+          )}
         </Grid>
-        {!winState ? message : messages.win}
-      </>
+
+        <Typography variant="h6" className={classes.paper} style={{ textAlign: 'center' }}>
+          {!winState ? message : messages.win}
+        </Typography>
+      </Grid>
     );
   }
 }
 
-UserGuesses.propTypes = {};
+HumanPlayer.propTypes = {};
 
-export default withStyles(styles)(UserGuesses);
+export default withStyles(styles)(HumanPlayer);
