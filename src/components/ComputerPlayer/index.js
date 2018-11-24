@@ -98,6 +98,7 @@ class ComputerPlayer extends Component {
               <>
                 <Grid container justify="center">
                   <Button
+                    id="smallerButton"
                     variant="contained"
                     color="primary"
                     className={classes.button}
@@ -106,6 +107,7 @@ class ComputerPlayer extends Component {
                     My number is SMALLER
                   </Button>
                   <Button
+                    id="biggerButton"
                     variant="contained"
                     color="primary"
                     className={classes.button}

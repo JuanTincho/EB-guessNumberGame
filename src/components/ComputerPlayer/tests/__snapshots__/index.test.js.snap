@@ -123,6 +123,7 @@ Array [
     <button
       className="MuiButtonBase-root-154 MuiButton-root-128 MuiButton-contained-139 MuiButton-containedPrimary-140 MuiButton-raised-142 MuiButton-raisedPrimary-143 ComputerPlayer-button-1"
       disabled={false}
+      id="smallerButton"
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -149,6 +150,7 @@ Array [
     <button
       className="MuiButtonBase-root-154 MuiButton-root-128 MuiButton-contained-139 MuiButton-containedPrimary-140 MuiButton-raised-142 MuiButton-raisedPrimary-143 ComputerPlayer-button-1"
       disabled={false}
+      id="biggerButton"
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}

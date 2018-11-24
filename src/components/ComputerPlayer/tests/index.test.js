@@ -66,4 +66,27 @@ describe('<ComputerPlayer /> tests', () => {
     expect(componentInstance.state.minNumber).toEqual(0);
     expect(componentInstance.state.maxNumber).toEqual(100);
   });
+
+  describe('Buttons', () => {
+    let minNumber;
+    let maxNumber;
+    let guessNumber;
+    beforeEach(() => {
+      componentInstance.setGuessNumber = jest.fn();
+      componentInstance.startGame();
+      ({ minNumber, maxNumber, guessNumber } = componentInstance.state);
+    });
+
+    it('smaller Button should set call setGuessNumber with guessNumber as maxNumber', () => {
+      component.find('[id="smallerButton"]').simulate('click');
+      expect(componentInstance.setGuessNumber).toHaveBeenCalledTimes(1);
+      expect(componentInstance.setGuessNumber).toHaveBeenCalledWith(minNumber, guessNumber);
+    });
+
+    it('bigger Button should set call setGuessNumber with guessNumber as minNumber', () => {
+      component.find('[id="biggerButton"]').simulate('click');
+      expect(componentInstance.setGuessNumber).toHaveBeenCalledTimes(1);
+      expect(componentInstance.setGuessNumber).toHaveBeenCalledWith(guessNumber, maxNumber);
+    });
+  });
 });
