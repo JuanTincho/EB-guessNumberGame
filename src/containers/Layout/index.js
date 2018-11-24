@@ -17,15 +17,6 @@ const styles = theme => ({
   tab: {
     textTransform: 'initial',
   },
-  paper: {
-    padding: theme.spacing.unit * 2,
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-  },
-  textField: {
-    marginLeft: theme.spacing.unit,
-    marginRight: theme.spacing.unit,
-  },
 });
 
 class Layout extends Component {
@@ -70,6 +61,7 @@ class Layout extends Component {
 }
 
 Layout.propTypes = {
+  // eslint-disable-next-line react/forbid-prop-types
   classes: PropTypes.object.isRequired,
 };
 

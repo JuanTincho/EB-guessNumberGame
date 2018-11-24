@@ -5,13 +5,13 @@ exports[`<Layout /> tests Layout shoud match snapshot 1`] = `
   className="Layout-root-1"
 >
   <div
-    className="MuiGrid-container-6 MuiGrid-spacing-xs-24-30"
+    className="MuiGrid-container-4 MuiGrid-spacing-xs-24-28"
   >
     <div
-      className="MuiGrid-item-7 MuiGrid-grid-xs-12-46"
+      className="MuiGrid-item-5 MuiGrid-grid-xs-12-44"
     >
       <h4
-        className="MuiTypography-root-103 MuiTypography-h4-118"
+        className="MuiTypography-root-101 MuiTypography-h4-116"
         style={
           Object {
             "textAlign": "center",
@@ -22,13 +22,13 @@ exports[`<Layout /> tests Layout shoud match snapshot 1`] = `
       </h4>
     </div>
     <div
-      className="MuiGrid-item-7 MuiGrid-grid-xs-12-46"
+      className="MuiGrid-item-5 MuiGrid-grid-xs-12-44"
     >
       <div
         className="Layout-tabs-2"
       >
         <header
-          className="MuiPaper-root-147 MuiPaper-elevation4-153 MuiAppBar-root-138 MuiAppBar-positionStatic-142 MuiAppBar-colorPrimary-145"
+          className="MuiPaper-root-145 MuiPaper-elevation4-151 MuiAppBar-root-136 MuiAppBar-positionStatic-140 MuiAppBar-colorPrimary-143"
           style={
             Object {
               "marginBottom": "2rem",
@@ -36,13 +36,13 @@ exports[`<Layout /> tests Layout shoud match snapshot 1`] = `
           }
         >
           <div
-            className="MuiTabs-root-174"
+            className="MuiTabs-root-172"
           >
             <div
-              className="MuiTabs-flexContainer-175"
+              className="MuiTabs-flexContainer-173"
             >
               <div
-                className="MuiTabs-scroller-177 MuiTabs-fixed-178"
+                className="MuiTabs-scroller-175 MuiTabs-fixed-176"
                 onScroll={[Function]}
                 role="tablist"
                 style={
@@ -52,11 +52,11 @@ exports[`<Layout /> tests Layout shoud match snapshot 1`] = `
                 }
               >
                 <div
-                  className="MuiTabs-flexContainer-175 MuiTabs-centered-176"
+                  className="MuiTabs-flexContainer-173 MuiTabs-centered-174"
                 >
                   <button
                     aria-selected={true}
-                    className="MuiButtonBase-root-195 MuiTab-root-183 MuiTab-textColorInherit-185 MuiTab-selected-188 Layout-tab-3"
+                    className="MuiButtonBase-root-193 MuiTab-root-181 MuiTab-textColorInherit-183 MuiTab-selected-186 Layout-tab-3"
                     disabled={false}
                     onBlur={[Function]}
                     onClick={[Function]}
@@ -74,25 +74,25 @@ exports[`<Layout /> tests Layout shoud match snapshot 1`] = `
                     type="button"
                   >
                     <span
-                      className="MuiTab-wrapper-191"
+                      className="MuiTab-wrapper-189"
                     >
                       <span
-                        className="MuiTab-labelContainer-192"
+                        className="MuiTab-labelContainer-190"
                       >
                         <span
-                          className="MuiTab-label-193"
+                          className="MuiTab-label-191"
                         >
                           Human Player
                         </span>
                       </span>
                     </span>
                     <span
-                      className="MuiTouchRipple-root-284"
+                      className="MuiTouchRipple-root-282"
                     />
                   </button>
                   <button
                     aria-selected={false}
-                    className="MuiButtonBase-root-195 MuiTab-root-183 MuiTab-textColorInherit-185 Layout-tab-3"
+                    className="MuiButtonBase-root-193 MuiTab-root-181 MuiTab-textColorInherit-183 Layout-tab-3"
                     disabled={false}
                     onBlur={[Function]}
                     onClick={[Function]}
@@ -110,25 +110,25 @@ exports[`<Layout /> tests Layout shoud match snapshot 1`] = `
                     type="button"
                   >
                     <span
-                      className="MuiTab-wrapper-191"
+                      className="MuiTab-wrapper-189"
                     >
                       <span
-                        className="MuiTab-labelContainer-192"
+                        className="MuiTab-labelContainer-190"
                       >
                         <span
-                          className="MuiTab-label-193"
+                          className="MuiTab-label-191"
                         >
                           Computer Player
                         </span>
                       </span>
                     </span>
                     <span
-                      className="MuiTouchRipple-root-284"
+                      className="MuiTouchRipple-root-282"
                     />
                   </button>
                 </div>
                 <span
-                  className="MuiPrivateTabIndicator-root-198 MuiPrivateTabIndicator-colorSecondary-200 MuiTabs-indicator-182"
+                  className="MuiPrivateTabIndicator-root-196 MuiPrivateTabIndicator-colorSecondary-198 MuiTabs-indicator-180"
                   style={
                     Object {
                       "left": 0,
@@ -141,41 +141,43 @@ exports[`<Layout /> tests Layout shoud match snapshot 1`] = `
           </div>
         </header>
         <div
-          className="MuiGrid-container-6 MuiGrid-align-items-xs-center-14 MuiGrid-justify-xs-center-23"
+          className="MuiGrid-container-4 MuiGrid-align-items-xs-center-12 MuiGrid-justify-xs-center-21"
         >
           <div
-            className="MuiGrid-container-6 MuiGrid-justify-xs-center-23"
+            className="MuiGrid-container-4 MuiGrid-justify-xs-center-21"
           >
             <div
-              className="MuiGrid-item-7 MuiGrid-grid-xs-3-37"
+              className="MuiGrid-item-5 MuiGrid-grid-xs-3-35"
             >
               <div
-                className="MuiPaper-root-147 MuiPaper-elevation2-151 MuiPaper-rounded-148 HumanPlayer-paper-202"
+                className="MuiPaper-root-145 MuiPaper-elevation2-149 MuiPaper-rounded-146 HumanPlayer-paper-200"
               >
-                Choose a number between 1 and 100
+                Choose a number between 1 and 100 
+                <br />
+                 and press Enter or click on the button below
               </div>
             </div>
             <div
-              className="MuiGrid-container-6 MuiGrid-justify-xs-center-23"
+              className="MuiGrid-container-4 MuiGrid-justify-xs-center-21"
             >
               <div
-                className="MuiFormControl-root-204 MuiFormControl-marginNormal-205 HumanPlayer-textField-203"
+                className="MuiFormControl-root-202 MuiFormControl-marginNormal-203 HumanPlayer-textField-201"
                 onKeyPress={[Function]}
               >
                 <label
-                  className="MuiFormLabel-root-219 MuiFormLabel-filled-223 MuiInputLabel-root-208 MuiInputLabel-formControl-213 MuiInputLabel-animated-216 MuiInputLabel-shrink-215 MuiInputLabel-outlined-218"
+                  className="MuiFormLabel-root-217 MuiFormLabel-filled-221 MuiInputLabel-root-206 MuiInputLabel-formControl-211 MuiInputLabel-animated-214 MuiInputLabel-shrink-213 MuiInputLabel-outlined-216"
                   data-shrink={true}
                   htmlFor="outlined"
                 >
                   Number
                 </label>
                 <div
-                  className="MuiInputBase-root-239 MuiOutlinedInput-root-226 MuiInputBase-formControl-240"
+                  className="MuiInputBase-root-237 MuiOutlinedInput-root-224 MuiInputBase-formControl-238"
                   onClick={[Function]}
                 >
                   <fieldset
                     aria-hidden={true}
-                    className="MuiPrivateNotchedOutline-root-256 MuiOutlinedInput-notchedOutline-233"
+                    className="MuiPrivateNotchedOutline-root-254 MuiOutlinedInput-notchedOutline-231"
                     style={
                       Object {
                         "paddingLeft": 8,
@@ -183,7 +185,7 @@ exports[`<Layout /> tests Layout shoud match snapshot 1`] = `
                     }
                   >
                     <legend
-                      className="MuiPrivateNotchedOutline-legend-257"
+                      className="MuiPrivateNotchedOutline-legend-255"
                       style={
                         Object {
                           "width": 0,
@@ -201,7 +203,7 @@ exports[`<Layout /> tests Layout shoud match snapshot 1`] = `
                   </fieldset>
                   <input
                     aria-invalid={false}
-                    className="MuiInputBase-input-249 MuiOutlinedInput-input-234 MuiInputBase-inputType-252"
+                    className="MuiInputBase-input-247 MuiOutlinedInput-input-232 MuiInputBase-inputType-250"
                     disabled={false}
                     id="outlined"
                     max="100"
@@ -218,10 +220,10 @@ exports[`<Layout /> tests Layout shoud match snapshot 1`] = `
               </div>
             </div>
             <div
-              className="MuiGrid-container-6 MuiGrid-justify-xs-center-23"
+              className="MuiGrid-container-4 MuiGrid-justify-xs-center-21"
             >
               <button
-                className="MuiButtonBase-root-195 MuiButton-root-258 MuiButton-contained-269 MuiButton-containedPrimary-270 MuiButton-raised-272 MuiButton-raisedPrimary-273 HumanPlayer-button-201"
+                className="MuiButtonBase-root-193 MuiButton-root-256 MuiButton-contained-267 MuiButton-containedPrimary-268 MuiButton-raised-270 MuiButton-raisedPrimary-271 HumanPlayer-button-199"
                 disabled={false}
                 onBlur={[Function]}
                 onClick={[Function]}
@@ -238,17 +240,17 @@ exports[`<Layout /> tests Layout shoud match snapshot 1`] = `
                 type="button"
               >
                 <span
-                  className="MuiButton-label-259"
+                  className="MuiButton-label-257"
                 >
                   Check Answer
                 </span>
                 <span
-                  className="MuiTouchRipple-root-284"
+                  className="MuiTouchRipple-root-282"
                 />
               </button>
             </div>
             <h6
-              className="MuiTypography-root-103 MuiTypography-h6-120 HumanPlayer-paper-202"
+              className="MuiTypography-root-101 MuiTypography-h6-118 HumanPlayer-paper-200"
               style={
                 Object {
                   "textAlign": "center",

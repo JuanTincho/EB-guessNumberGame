@@ -10,7 +10,9 @@ exports[`<HumanPlayer /> tests Error label on TextField 1`] = `
     <div
       className="MuiPaper-root-101 MuiPaper-elevation2-105 MuiPaper-rounded-102 HumanPlayer-paper-2"
     >
-      Choose a number between 1 and 100
+      Choose a number between 1 and 100 
+      <br />
+       and press Enter or click on the button below
     </div>
   </div>
   <div
@@ -125,7 +127,9 @@ exports[`<HumanPlayer /> tests HumanPlayer shoud match snapshot 1`] = `
     <div
       className="MuiPaper-root-101 MuiPaper-elevation2-105 MuiPaper-rounded-102 HumanPlayer-paper-2"
     >
-      Choose a number between 1 and 100
+      Choose a number between 1 and 100 
+      <br />
+       and press Enter or click on the button below
     </div>
   </div>
   <div

@@ -148,6 +148,9 @@ class ComputerPlayer extends Component {
   }
 }
 
-ComputerPlayer.propTypes = {};
+ComputerPlayer.propTypes = {
+  // eslint-disable-next-line react/forbid-prop-types
+  classes: PropTypes.object.isRequired,
+};
 
 export default withStyles(styles)(ComputerPlayer);

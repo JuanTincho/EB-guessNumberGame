@@ -84,7 +84,11 @@ class HumanPlayer extends Component {
     return (
       <Grid container justify="center">
         <Grid item xs={3}>
-          <Paper className={classes.paper}>Choose a number between 1 and 100</Paper>
+          <Paper className={classes.paper}>
+            <>
+              Choose a number between 1 and 100 <br /> and press Enter or click on the button below
+            </>
+          </Paper>
         </Grid>
         <Grid container justify="center">
           <TextField
@@ -133,6 +137,9 @@ class HumanPlayer extends Component {
   }
 }
 
-HumanPlayer.propTypes = {};
+HumanPlayer.propTypes = {
+  // eslint-disable-next-line react/forbid-prop-types
+  classes: PropTypes.object.isRequired,
+};
 
 export default withStyles(styles)(HumanPlayer);
