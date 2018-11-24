@@ -18,6 +18,7 @@ describe('<ComputerPlayer /> tests', () => {
 
   it('start game ', () => {
     expect(componentInstance.state.gameStarted).toBeFalsy();
+    componentInstance.getGuessNumber = jest.fn(() => 1);
     componentInstance.startGame();
     expect(componentInstance.state.gameStarted).toBeTruthy();
     const tree = renderer.create(component).toJSON();
@@ -38,11 +39,18 @@ describe('<ComputerPlayer /> tests', () => {
   it('setGuessNumber', () => {
     const mockedMinNumber = 1;
     const mockedMaxNumber = 10;
-    componentInstance.getRandomNumber = jest.fn();
+    componentInstance.getGuessNumber = jest.fn();
     componentInstance.setGuessNumber(mockedMinNumber, mockedMaxNumber);
     expect(componentInstance.state.minNumber).toEqual(mockedMinNumber);
     expect(componentInstance.state.maxNumber).toEqual(mockedMaxNumber);
-    expect(componentInstance.getRandomNumber).toHaveBeenCalledTimes(1);
+    expect(componentInstance.getGuessNumber).toHaveBeenCalledTimes(1);
+  });
+
+  it('guetGuessNumber', () => {
+    expect(componentInstance.getGuessNumber(1, 100)).toBe(50);
+    expect(componentInstance.getGuessNumber(50, 100)).toBe(75);
+    expect(componentInstance.getGuessNumber(1, 50)).toBe(25);
+    expect(componentInstance.getGuessNumber(4, 9)).toBe(6);
   });
 
   it('restartGame', () => {
@@ -55,7 +63,7 @@ describe('<ComputerPlayer /> tests', () => {
     componentInstance.restartGame();
     expect(componentInstance.state.gameStarted).toBeFalsy();
     expect(componentInstance.state.winState).toBeFalsy();
-    expect(componentInstance.minNumber).toEqual(0);
-    expect(componentInstance.maxNumber).toEqual(100);
+    expect(componentInstance.state.minNumber).toEqual(0);
+    expect(componentInstance.state.maxNumber).toEqual(100);
   });
 });
