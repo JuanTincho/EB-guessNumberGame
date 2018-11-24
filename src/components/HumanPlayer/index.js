@@ -4,7 +4,7 @@ import {
   Button, Grid, Paper, TextField, Typography, withStyles,
 } from '@material-ui/core';
 
-const messages = {
+export const messages = {
   win: 'You win!!!',
   smaller: 'My number is smaller',
   bigger: 'My number is bigger',
